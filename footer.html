@@ -1,0 +1,176 @@
+  <section class="footer" id="">
+      <div class="container">
+        <div class="row">
+          <!--
+          -->
+
+          <div class="col-lg-6">
+            <h6 class="text-white">
+              NYHETER
+            </h6>
+            <hr class="hr-borders">
+            <p class="text-white">
+             <a href="./assets/uploads/1356460.pdf" class="text-white text-decoration-none">
+                <small>
+                  Ny method för att upptacka kranskärlsjukdom
+                </small>
+                <hr class="hr-border-dote" style="width:30%;">
+             </a>
+              <a href="./assets/uploads/1356399.pdf" class="text-white text-decoration-none">
+                <small>
+                  Hälsoundersökning
+                </small>
+                <hr class="hr-border-dote" style="width:30%;">
+             </a>
+            </p>
+          </div>
+
+          <div class="col-lg-6">
+            <h6 class="text-white">
+              KONTAKTA OSS
+            </h6>
+            <hr class="hr-borders">
+
+            <p class="text-white">
+              <i class="bi bi-pin-map-fill"></i>
+              <br>
+              <small>
+                Scandinavian Heart Care AB 
+                <br> Org.nr. 556917-9145
+              </small>
+              <br>
+              <br>
+              <small>
+                  Cederbouurgsgatan 8
+                  <br>
+                  412 55 Göteborg
+              </small>
+              <br>
+              <br>
+              <a class="text-white text-decoration-none" href="tel:+46031-7960-140"><i class="bi bi-telephone-fill"></i> 
+                <small>
+                  +46 031-7960-140
+                </small>
+              </a>
+              <br>
+              <a class="text-white text-decoration-none" href="tel:+46031-7960-149">
+                  <i class="bi bi-telephone-fill"></i>
+                  <small>
+                      +46 031-7960-149
+                  </small>
+              </a>
+              <br>
+              <a class="text-white text-decoration-none" href="mailto:info@shafa.se"><i class="bi bi-envelope"></i> 
+                <small>
+                  info@shafa.se
+                </small>
+              </a>
+            </p>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+    <!--Footer-->
+
+    <!--Footer Bottom-->
+    <div class="scandinavian-desktop">
+      <div class="footer-bottom" id="">
+        <p class="text-center text-white">
+          <small>
+            Copyright 2023. Scandinavian Heart Care AB, 
+            <br> 
+            All Rights Reserved.
+          </small>
+        </p>
+      </div>
+    </div>
+
+    <div class="scandinavian-mobile">
+      <div class="footer-bottom-mobile" id="">
+        <p class="text-center text-white">
+          <small>
+            Copyright 2023. Scandinavian Heart Care AB, 
+            <br> 
+            All Rights Reserved.
+          </small>
+        </p>
+      </div>
+    </div>
+    <!--Footer Bottom-->
+
+    <div class="scandinavian-desktop">
+      <div class="position-fixed bottom-0 end-0 mb-3">
+          <a class="text-decoration-none goTop text-white me-3 go-top opacity-50" href="#gotop" style="padding:22px 9px 6px 9px; background:#1594BF;">
+            <i class="bi-chevron-up display-6"></i>
+          </a>
+      </div>  
+    </div>
+
+    <div class="scandinavian-mobile">
+      <div class="position-fixed bottom-0 end-0 mb-5 p-3">
+        <a class="go-top text-decoration-none goTop text-white me-0 opacity-50" href="#gotop" style="padding:13px 9px 6px 9px; background:#1594BF;">
+              <i class="bi-chevron-up display-6"></i>
+        </a>
+      </div>
+    </div>
+	
+
+    <script>
+        (function(){
+  
+  //Change these values
+  var msg = "We use cookies to enhance your web browsing experience. By continuing to browse the site you agree to our policy on cookie usage.";
+  var closeBtnMsg = "OK";
+  var privacyBtnMsg = "Privacy Policy";
+  var privacyLink = "https://www.google.com";
+  
+  //check cookies 
+  if(document.cookie){
+   var cookieString = document.cookie;
+   var cookieList = cookieString.split(";");
+   // if cookie named OKCookie is found, return
+   for(x = 0; x < cookieList.length; x++){
+     if (cookieList[x].indexOf("OKCookie") != -1){return}; 
+   }
+  }
+  
+  var docRoot = document.body;
+  var okC = document.createElement("div");
+  okC.setAttribute("id", "okCookie");
+  var okCp = document.createElement("p");
+  var okcText = document.createTextNode(msg); 
+  
+  //close button
+  var okCclose = document.createElement("a");
+  var okcCloseText = document.createTextNode(closeBtnMsg);
+  okCclose.setAttribute("href", "#");
+  okCclose.setAttribute("id", "okClose");
+  okCclose.appendChild(okcCloseText);
+  okCclose.addEventListener("click", closeCookie, false);
+ 
+  //privacy button
+  var okCprivacy = document.createElement("a");
+  var okcPrivacyText = document.createTextNode(privacyBtnMsg);
+  okCprivacy.setAttribute("href", privacyLink);
+  okCprivacy.setAttribute("id", "okCprivacy");
+  okCprivacy.appendChild(okcPrivacyText);
+  
+  //add to DOM
+  okCp.appendChild(okcText);
+  okC.appendChild(okCp);
+  okC.appendChild(okCclose);
+  okC.appendChild(okCprivacy);
+  docRoot.appendChild(okC);
+  
+  okC.classList.add("okcBeginAnimate");
+  
+  function closeCookie(){
+    var cookieExpire = new Date();
+    cookieExpire.setFullYear(cookieExpire.getFullYear() +2);
+    document.cookie="OKCookie=1; expires=" + cookieExpire.toGMTString() + ";";
+    docRoot.removeChild(okC);
+  }
+  
+})();
+    </script>
